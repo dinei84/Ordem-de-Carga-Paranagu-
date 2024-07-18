@@ -1,0 +1,54 @@
+/* Estilos para a seção principal */
+section {
+    max-width: 70%; /* Ajusta a largura máxima para 70% */
+    margin: auto; /* Centraliza a seção na página */
+    margin-top: 15px; /* Espaçamento superior da seção */
+    border-bottom: 12px solid rgb(116, 27, 58); /* Borda inferior da seção */
+    justify-content: center; /* Alinha os elementos horizontalmente no centro */
+  }
+
+.blk1, .blk2, .blk3 {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 18px; /* Espaçamento entre os blocos */
+}
+
+.blk2, .blk3 {
+    margin-top: 5px; /* Espaçamento adicional para os blocos blk2 e blk3 */
+    margin-right: 300px;
+}
+
+.title {
+    flex: 1; /* Largura do título do bloco */
+}
+
+.content {
+    flex: 2; /* Largura do conteúdo do bloco */
+    text-align: center; /* Alinhamento central do conteúdo */
+    background-color: rgba(170, 166, 166, 0.442); /* Cor de fundo do conteúdo */
+    padding: 7px; /* Espaçamento interno do conteúdo */
+    box-sizing: border-box; /* Modelo de caixa para dimensionamento do conteúdo */
+    border-radius: 5px; /* Arredondamento dos cantos do conteúdo */
+  }
+
+/* Estilos para alinhar content1 e content2 ao centro */
+.content1, .content2 {
+    display: flex;
+    justify-content: flex-start;
+    background-color: rgba(170, 166, 166, 0.442);
+    padding: 7px;
+    border-radius: 5px;
+  }
+
+.content1 {
+    margin-top: 0; /* Remove a margem superior do content1 */
+}
+
+.content2 {
+    margin-top: 12px; /* Adiciona margem superior ao content2 */
+}
+
+.content span, .content1 span, .content2 span {
+    display: block; 
+    text-align: center; /* Alinha o texto dentro dos spans ao centro */
+}
