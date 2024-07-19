@@ -1,6 +1,6 @@
 /* Estilos para o cabeçalho */
 header {
-    margin-top: 35px;
+    margin-top: 30px;
     display: flex;
     height: 250px;
     border-top: 12px solid rgb(116, 27, 58);
@@ -9,9 +9,9 @@ header {
 
 img {
     width: 280px;
-    height: 105px;
-    margin-left: 90px;
-    margin-top: 25px;
+    height: 180px;
+    margin-left: 60px;
+    margin-top: 45px;
 }
 
 .logo {
@@ -21,8 +21,10 @@ img {
 }
 
 h2 {
+    background-color: lightblue;
+    width: 485px;
     font-size: 27px;
-    margin-top: 40px;
+    margin-top: 20px;
 }
 
 .info {
@@ -30,7 +32,7 @@ h2 {
     flex-direction: column;
     width: 800px;
     height: 200px;
-    margin-left: 150px;
+    margin-left: 100px;
     padding-top: 35px;
 }
 

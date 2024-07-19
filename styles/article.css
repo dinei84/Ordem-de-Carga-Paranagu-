@@ -12,13 +12,13 @@ article {
 }
 
 .autorizacao p {
-    font-size: 13px;
+    font-size: 17px;
     font-weight: bold;
 }
 
 .declaracao {
-    margin-top: 10px;
-    font-size: 10px;
+    margin-top: 13px;
+    font-size: 16px;
 }
 
 .validade {
@@ -27,6 +27,8 @@ article {
 
 .validade h2 {
     font-size: 17px;
+    text-align: center;
+    margin: auto;
 }
 
 /* Estilos para impressão */
@@ -39,6 +41,7 @@ article {
     }
     section.content {
         background-color: #aaaaaa;
+        padding-left: 165px;
     }
     button {
         display: none;
