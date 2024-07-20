@@ -12,3 +12,21 @@ body {
     height: 100vh;
     font-family: "Roboto", sans-serif;
 }
+
+@media print {
+    body {
+        width: 100%;
+        margin: 0;
+        -webkit-print-color-adjust: exact;
+        print-color-adjust: exact; /* Suporte adicional */
+        transform: scale(1); /* Garante que a escala seja 100% */
+        transform-origin: top left; /* Define a origem da transformação */
+    }
+    section.content {
+        background-color: #aaaaaa;
+        padding-left: 165px;
+    }
+    button {
+        display: none;
+    }
+}
