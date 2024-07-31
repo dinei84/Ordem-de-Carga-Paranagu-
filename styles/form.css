@@ -32,16 +32,15 @@ body {
 .form-group {
     display: flex;
     flex-direction: column;
-    margin-bottom: 15px;
+    margin-bottom: 13px;
 }
 
 .form-group label {
-    margin-bottom: 5px;
     font-weight: bold;
 }
 
 .form-group input {
-    padding: 10px;
+    padding: 5px;
     border: 1px solid #ccc;
     border-radius: 4px;
     font-size: 16px;
@@ -62,21 +61,19 @@ body {
     background-color: #0056b3;
 }
 
-@media print {
-    body {
-        width: 100%;
-        margin: 0;
-        -webkit-print-color-adjust: exact;
-        print-color-adjust: exact; /* Suporte adicional */
-        transform: scale(1); /* Garante que a escala seja 100% */
-        transform-origin: top left; /* Define a origem da transformação */
+@media (max-width: 600px) {
+    .form-container {
+        padding: 15px;
     }
-    section.content {
-        background-color: #aaaaaa;
-        padding-left: 165px;
+    .form-group {
+        margin-bottom: 10px;
     }
-    button {
-        display: none;
+    .form-group input {
+        font-size: 14px;
+    }
+    .submit-btn {
+        font-size: 14px;
+        padding: 8px;
     }
 }
 

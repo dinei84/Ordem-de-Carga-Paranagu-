@@ -38,8 +38,6 @@ article {
         margin: 0;
         -webkit-print-color-adjust: exact;
         print-color-adjust: exact; /* Suporte adicional */
-        transform: scale(1); /* Garante que a escala seja 100% */
-        transform-origin: top left; /* Define a origem da transformação */
     }
     section.content {
         background-color: #aaaaaa;

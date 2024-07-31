@@ -9,9 +9,9 @@ header {
 
 img {
     width: 280px;
-    height: 180px;
-    margin-left: 60px;
-    margin-top: 45px;
+    height: 107px;
+    margin-left: 75px;
+    margin-top: 50px;
 }
 
 .logo {
@@ -21,19 +21,27 @@ img {
 }
 
 h2 {
-    background-color: lightblue;
     width: 485px;
     font-size: 27px;
     margin-top: 20px;
 }
 
+.number input{
+    height: 38px;
+    border: none;
+    background-color: rgba(170, 166, 166, 0.442);
+    font-size: 41px;
+    text-align: center;
+    color: red;
+}
+
 .info {
     display: flex;
     flex-direction: column;
-    width: 800px;
+    width: 699px;
     height: 200px;
-    margin-left: 100px;
-    padding-top: 35px;
+    margin-left: 5px;
+    padding-top: 10px;
 }
 
 h3 {
@@ -42,27 +50,9 @@ h3 {
 }
 
 .number {
-    width: 800px;
+    width: 700px;
     height: 70px;
     background-color: rgba(170, 166, 166, 0.442);
     margin-top: 60px;
     text-align: center;
-}
-
-@media print {
-    body {
-        width: 100%;
-        margin: 0;
-        -webkit-print-color-adjust: exact;
-        print-color-adjust: exact; /* Suporte adicional */
-        transform: scale(1); /* Garante que a escala seja 100% */
-        transform-origin: top left; /* Define a origem da transformação */
-    }
-    section.content {
-        background-color: #aaaaaa;
-        padding-left: 165px;
-    }
-    button {
-        display: none;
-    }
 }

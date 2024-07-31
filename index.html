@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="./styles/global.css">
     <link rel="stylesheet" href="./styles/article.css">
     <link rel="stylesheet" href="./styles/aside.css">
-    <title>Ordem de Carregamento</title>    
+    <title>Ordem de Carregamento</title>
 </head>
 <body>
     <header>
@@ -19,12 +19,12 @@
         <div class="info">
             <h3>
                 G10 TRANSPORTES S.A.<br>
-                AV AYRTON SENNA DA SILVA - PARQUE SAO JOAO - PARANAGUA - PR -
-                <br>83.212-090</br>
-                CNPJ: 07.569.161/0009-05 I.E.: 90600056-37 TELEFONE: (44)3261-0010
+                RODOVIA BR280, S/N - AREIAS PEQUENAS, KM 26 SALA 16, ARAQUARI - SC -
+                <br>89245000</br>
+                CNPJ: 07.569.161/001-11 I.E.: 257005552 TELEFONE: (44) 3261-0022
             </h3>
             <div class="number">
-                <h1>31200</h1>
+                <input type="number" id="orderNumberInput" value="3255">
             </div>
         </div>
     </header>
@@ -54,6 +54,9 @@
                 <div class="content1">
                     <span id="coletaSpan"></span>
                 </div>
+                <div class="content1">
+                    <span id="armazemSpan"></span>
+                </div>
                 <div class="content2">
                     <span id="coletaUFSpan"></span>
                 </div>
@@ -80,7 +83,7 @@
                 <span id="produtoSpan"></span>
             </div>
         </div>
-        <div class="blk3">
+        <div class="blk3 stretched">
             <div class="title">
                 <p><strong>VEICULO</strong></p>
             </div>
@@ -90,6 +93,12 @@
                 </div>
                 <div class="content2">
                     <span id="veiculoPlaca2Span"></span>
+                </div>
+                <div class="content2">
+                    <span id="veiculo-dolly"></span>
+                </div>
+                <div class="content2">
+                    <span id="veiculo-placa3"></span>
                 </div>
             </div>
         </div>
@@ -139,9 +148,7 @@
             </div>
         </div>
     </section>
-    <div class="separacao">
-
-    </div>
+    <div class="separacao"></div>
     <article>
         <div class="autorizacao">
             <p>AUTORIZAÇÃO DE CARREGAMENTO VÁLIDA SOMENTE COM A EFETIVA APRESENTAÇÃO DO SUBCONTRATADO NO LOCAL DE EMBARQUE DENTRO DO PRAZO DE VALIDADE PREVISTO ABAIXO.</p>
@@ -170,9 +177,7 @@
                 <p>_____________________________________</p>
             </div>
             <div>
-                <p>ASSINATURA EMBARCADOR <br>
-                    G10 TRANSPORTES - ARAQUARI
-                </p>
+                <p>ASSINATURA EMBARCADOR <br>G10 TRANSPORTES - ARAQUARI</p>
             </div>
         </div>
     </aside>
@@ -187,15 +192,13 @@
         </div>
     </aside>
    
-
     <div class="imprimir">
         <button>IMPRIMIR</button>
     </div>
 
     <div class="voltar">
         <a href="form.html"><button>VOLTAR</button></a>
-    </div>        
-    
+    </div>
 
     <script src="js/script.js"></script>
 </body>
