@@ -1,26 +1,29 @@
-document.addEventListener('DOMContentLoaded', function() {
-    const orderData = JSON.parse(localStorage.getItem('orderData'));
-    if (orderData) {
-        document.getElementById('centroCustoSpan').textContent = orderData.centroCusto;
-        document.getElementById('clienteSpan').textContent = orderData.cliente;
-        document.getElementById('coletaSpan').textContent = orderData.coleta;
-        document.getElementById('armazemSpan').textContent = orderData.armazem;
-        document.getElementById('coletaUFSpan').textContent = orderData.coletaUF;
-        document.getElementById('entregaSpan').textContent = orderData.entrega;
-        document.getElementById('entregaUFSpan').textContent = orderData.entregaUF;
-        document.getElementById('produtoSpan').textContent = orderData.produto;
-        document.getElementById('veiculoCavaloSpan').textContent = orderData.veiculoCavalo;
-        document.getElementById('veiculoPlaca2Span').textContent = orderData.veiculoPlaca2;
-        document.getElementById('veiculo-dolly').textContent = orderData.veiculoPlaca2;
-        document.getElementById('veiculo-placa3').textContent = orderData.veiculoPlaca2;
-        document.getElementById('capacidadeSpan').textContent = orderData.capacidade;
-        document.getElementById('CPFmotoristaSpan').textContent = orderData.CPFmotorista;
-        document.getElementById('motoristaSpan').textContent = orderData.motorista;
-        document.getElementById('previsaoCarregamentoSpan').textContent = orderData.previsaoCarregamento;
-        document.getElementById('pedidoSpan').textContent = orderData.pedido;
-        document.getElementById('observacoesSpan').textContent = orderData.observacoes;
-    }
-    document.querySelector('button').addEventListener('click', function() {
-        window.print();
-    });
+// Verifica se está na página de resultado
+if (window.location.pathname.endsWith('index.html')) {
+    // Recupera os dados do localStorage
+    const formData = JSON.parse(localStorage.getItem('formData'));
+
+    // Preenche os spans com os dados do formulário
+    document.getElementById('centroCustoSpan').innerText = formData.centroCusto;
+    document.getElementById('clienteSpan').innerText = formData.cliente;
+    document.getElementById('coletaSpan').innerText = formData.coleta;
+    document.getElementById('armazemSpan').innerText = formData.armazem;
+    document.getElementById('coletaUFSpan').innerText = formData.coletaUF;
+    document.getElementById('entregaSpan').innerText = formData.entrega;
+    document.getElementById('entregaUFSpan').innerText = formData.entregaUF;
+    document.getElementById('produtoSpan').innerText = formData.produto;
+    document.getElementById('veiculoCavaloSpan').innerText = formData['veiculo-cavalo'];
+    document.getElementById('veiculoPlaca2Span').innerText = formData['veiculo-placa2'];
+    document.getElementById('veiculo-dolly').innerText = formData['veiculo-dolly'];
+    document.getElementById('veiculo-placa3').innerText = formData['veiculo-placa3'];
+    document.getElementById('capacidadeSpan').innerText = formData.capacidade;
+    document.getElementById('motoristaSpan').innerText = formData.motorista;
+    document.getElementById('CPFmotoristaSpan').innerText = formData.CPFmotorista;
+    document.getElementById('previsaoCarregamentoSpan').innerText = formData.previsaoCarregamento;
+    document.getElementById('pedidoSpan').innerText = formData.pedido;
+    document.getElementById('observacoesSpan').innerText = formData.observacoes;
+}
+
+document.getElementById('imprimir').addEventListener('click', function() {
+    window.print();
 });
